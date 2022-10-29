@@ -45,10 +45,10 @@ const Home = () => {
             
             <div class = "footer">
                 <div class="sources">
-                    Sources
+                    Source code:
                 </div>
                 <div class="contact">
-                    fakeemail@fakeemail.fake
+                    
                 </div>
                 <div class="name">
                     Astrofacts

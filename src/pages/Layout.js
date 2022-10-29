@@ -5,7 +5,8 @@ const Layout = () => {
     <>
       <nav class = "navbar">
         <Link class = "navItem" to="/">Home</Link>
-        <Link class = "navItem" to="/flashcard">FlashCards</Link>
+        <Link class = "navItem" to="/flashcard">Flash Cards</Link>
+        <Link class = "navItem" to="/stars">Stars</Link>
       </nav>
 
       <Outlet />
