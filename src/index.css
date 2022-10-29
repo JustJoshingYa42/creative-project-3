@@ -1,0 +1,392 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.page, body {
+    background-color: #020202;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  justify-content: flex-start;
+}
+
+.navItem {
+  display: flex;
+  width: 5%;
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.flashcard-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flashcard {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background-color: #020202;
+  color: white;
+
+}
+
+.flashcardObject {
+  width:25%;
+}
+
+.planetImg {
+  width: 100%;
+}
+
+
+/*
+Copied stuff begin
+*/
+
+* {
+    margin:0;
+    box-sizing: border-box;
+    background-color: #020202;
+}
+
+.content, .block {
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.content {
+    background-color: #202021;
+    padding-bottom: 10px;
+}
+
+.saturn-img {
+    width: 50%;
+}
+
+.discover-container {
+    width: 10%;
+    display: flex;
+    color: #FFFFFF;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.discover-item{
+    width: 100%;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.button{
+    border: 1px solid white;
+    padding: 5px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.information-container {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-header {
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.button-container {
+    display: flex;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+
+.info-button {
+    display: flex;
+    width: 33.3%;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: large;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-button:hover {
+    background-color: #0a5757;
+    color: white;
+    text-decoration: none;
+}
+
+.description-header{
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid white;
+}
+
+.description {
+    font-style: italic;
+    font-size: large;
+    width: 100%;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.name, .contact, .sources {
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.planet-container {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid white;
+    margin: 3px;
+    padding: 5px;
+}
+
+.planet-img, .planet-fact {
+    width: 100%;
+}
+
+
+/* Begin star page */
+
+.star-block{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.star-header {
+    width: 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+.star-section {
+    display: flex;
+    text-align: left;
+}
+
+.star-content {
+    display: flex;
+    justify-content: space-between;
+    height: 90%;
+    border-bottom: 1px solid white;
+}
+
+.star-header {
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+}
+
+/*Begin Cosmology*/
+
+.cosmology-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cosmology-header, .cosmology-content {
+    width: 80%;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 420px) {
+
+
+    .discover-container {
+        width: 100%;
+    }
+    .nav-link {
+        padding: 5px !important;
+    }
+    
+    .planet-container {
+        width: 100%;
+    }
+    
+    .information-container {
+        margin-bottom: 20px;
+    }
+    
+    /*Begin Star Page*/
+    
+    .star-block {
+        border-bottom: 1px solid white;
+        flex-direction: column;
+    }
+    
+    .star-block, .star-section, .star-content {
+        flex-direction: column;
+        width: 100%;
+    }
+    .star-img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+
+    .planet-container {
+        width: 45%;
+    }
+    
+    .block {
+        flex-direction: column;
+    }
+    
+    .discover-container, .saturn-img {
+        width: 100%;
+    }
+    
+        /* Begin star page */
+
+
+    .left-border {
+        border-left: 1px solid white;
+    } 
+
+    .right-border {
+        border-right: 1px solid white;
+    } 
+    
+    .star-block{
+        width: 90%;
+        margin: 15px;
+        border-top: 1px solid white;
+    }
+    
+    .star-section {
+        width: 50%;
+        align-items: flex-start;
+        font-size: small;
+    }
+    
+    .star-image {
+        width: 100%;
+        height: auto;
+    }
+    
+    .star-content {
+        width: 100%;
+        border: 1px solid white;
+
+    }
+    
+    .star-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    
+
+}
+
+@media only screen and (min-width: 961px) {
+
+    .discover-container {
+        width: 20%;
+    }
+    
+    .footer {
+        justify-content: center;
+    }
+    
+    .name, .contact, .sources {
+        width: 33%;
+
+    }
+    
+    
+    /* Begin star page */
+
+
+    .left-border {
+        border-left: 1px solid white;
+    } 
+
+    .right-border {
+        border-right: 1px solid white;
+    } 
+    
+    .star-block{
+        width: 45%;
+        margin: 10px;
+        border-top: 1px solid white;
+    }
+    
+    .star-section {
+        width: 50%;
+        align-items: flex-start;
+    }
+    
+    .star-image {
+        width: 100%;
+        height: auto;
+    }
+    
+    .star-content {
+        width: 100%;
+        border: 1px solid white;
+
+    }
+
+}
+/**/
