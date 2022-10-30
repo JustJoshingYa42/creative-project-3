@@ -1,11 +1,11 @@
-import saturnImg from './../images/saturn.jpg'
-import { Outlet, Link } from "react-router-dom";
+import Footer from "./Footer.js";
 
+import {Link } from "react-router-dom";
 
 const Home = () => {
   return (
   
-  <div class="page">
+    <div class="page">
             
             <div class="content">
                 
@@ -22,7 +22,9 @@ const Home = () => {
                         </div>
                     </div>
                     
-                    <img class = "saturn-img" src={saturnImg} alt = "Saturn"/>
+                    
+                    
+                    <img class = "saturn-img"  src={require("../images/saturn.jpg")} alt = "Saturn"/>
                 </div>
                 
                 <div class="block">
@@ -35,25 +37,16 @@ const Home = () => {
                        Join hundreds of others in the pursuit of learning.
                     </div>
                     <div class="button-container">
-                        <Link class = "info-button" to="/flashcard">Flash cards</Link>
-
-                        <a class="info-button" href="#">Stars</a>
-                        <a class="info-button" href="#">Cosmology</a>
+                        <Link class = "info-button" to="/planets">Planets</Link>
+                        <Link class = "info-button" to="/stars">Stars</Link>
+                        <Link class = "info-button" to="/cosmology">Cosmology</Link>
+                        <Link class = "info-button" to="/flashcard">Planet flash cards!</Link>
                     </div>
                 </div>
             </div>
-            
-            <div class = "footer">
-                <div class="sources">
-                    Source code:
-                </div>
-                <div class="contact">
-                    
-                </div>
-                <div class="name">
-                    Astrofacts
-                </div>
-            </div>                
+
+            <Footer />
+              
         </div>
   
 

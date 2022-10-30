@@ -20,6 +20,11 @@ code {
 }
 
 
+a:visited, a:active, a:link {
+    text-decoration: none;
+    color: white;
+}
+
 .page, body {
     background-color: #020202;
 }
@@ -27,7 +32,6 @@ code {
 .navbar {
   display: flex;
   width: 100%;
-  height: 60px;
   background-color: black;
   color: white;
   text-decoration: none;
@@ -50,6 +54,17 @@ code {
   border: 2px solid white;
 }
 
+.flash-card-header {
+    display: flex;
+    color: white;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+    margin: 10px 0 10px 0;
+}
+
 .flashcard-container {
   width: 100%;
   display: flex;
@@ -58,16 +73,23 @@ code {
 }
 
 .flashcard {
-  width: 100%;
-  height: 0;
-  padding-bottom: 100%;
-  background-color: #020202;
-  color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background-color: #020202;
+    color: white;
 
 }
 
+.planetText {
+    padding-top: 50%;
+    width: 100%;
+}
+
 .flashcardObject {
-  width:25%;
+    width:25%;
 }
 
 .planetImg {
@@ -151,7 +173,7 @@ Copied stuff begin
 
 .info-button {
     display: flex;
-    width: 33.3%;
+    width: 24%;
     color: #FFFFFF;
     text-decoration: none;
     font-family: fantasy;
@@ -183,8 +205,9 @@ Copied stuff begin
 .footer {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    color: white;
 }
 
 .name, .contact, .sources {
@@ -234,7 +257,6 @@ Copied stuff begin
 .star-content {
     display: flex;
     justify-content: space-between;
-    height: 90%;
     border-bottom: 1px solid white;
 }
 
@@ -265,8 +287,15 @@ Copied stuff begin
     .discover-container {
         width: 100%;
     }
-    .nav-link {
+    
+    .navItem {
+        margin-bottom: 5px;
         padding: 5px !important;
+        width: 100%;
+    }
+    
+     .flashcardObject {
+        width: 100%
     }
     
     .planet-container {
@@ -277,6 +306,9 @@ Copied stuff begin
         margin-bottom: 20px;
     }
     
+    .contact {
+        width: 100%;
+    }
     /*Begin Star Page*/
     
     .star-block {
@@ -295,6 +327,24 @@ Copied stuff begin
 
 @media only screen and (min-width: 421px) and (max-width: 960px) {
 
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .navItem {
+        padding: 5px 0 5px 0;
+        margin: 5px 0 5px 0;
+        width: 45%;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .flashcardObject {
+        width: 50%
+    }
+    
     .planet-container {
         width: 45%;
     }
@@ -363,6 +413,10 @@ Copied stuff begin
     .name, .contact, .sources {
         width: 33%;
 
+    }
+    
+    .navbar {
+        height: 60px;
     }
     
     

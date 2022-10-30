@@ -1,14 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-
-import mercuryImg from './../images/mercury.jpg'
-import venusImg from './../images/venus.jpeg'
-import marsImg from './../images/mars.jpg'
-import juptierImg from './../images/jupiter.jpeg'
-import saturnImg from './../images/saturn.jpg'
-import uranusImg from './../images/uranus.jpg'
-import neptuneImg from './../images/neptune.jpg'
-import plutoImg from './../images/pluto.png'
+import Footer from "./Footer.js";
 
 const FlashCard = () => {
     
@@ -31,7 +22,7 @@ const FlashCard = () => {
                 <div class = "flashcardObject">
                     <button onClick = {this.handleClick} class = "flashcard">
                         {this.state.planetSide ? <img class="planetImg" alt = 
-                            {this.state.planetName} src={this.state.imgSource}/> : this.state.planetName}
+                            {this.state.planetName} src={this.state.imgSource}/> : <h1 class = "planetText">{this.state.planetName} </h1>}
                     </button>
                 </div>
                 
@@ -42,16 +33,24 @@ const FlashCard = () => {
     
   return (
       <div class = "page">
-          <div class = "flashcard-container">
-            <FlashCard planetName = "Saturn" imgSource = {saturnImg} />
-            <FlashCard planetName = "Mars" imgSource = {marsImg} />
-            <FlashCard planetName = "Mercury" imgSource = {mercuryImg} />
-            <FlashCard planetName = "Jupiter" imgSource = {juptierImg} />
-            <FlashCard planetName = "Pluto" imgSource = {plutoImg} />
-            <FlashCard planetName = "Neptune" imgSource = {neptuneImg} />
-            <FlashCard planetName = "Venus" imgSource = {venusImg} />
-            <FlashCard planetName = "Uranus" imgSource = {uranusImg} />
+            
+          <div class = "flash-card-header">
+            Here are flashcards for the planets! Click them to reveal the planets name!
           </div>
+      
+          <div class = "flashcard-container">
+            <FlashCard planetName = "Saturn" imgSource = {require("../images/saturn.jpg")} />
+            <FlashCard planetName = "Mars" imgSource = {require("../images/mars.jpg")} />
+            <FlashCard planetName = "Mercury" imgSource = {require("../images/mercury.jpg")} />
+            <FlashCard planetName = "Jupiter" imgSource = {require("../images/jupiter.jpeg")} />
+            <FlashCard planetName = "Trick question! This is pluto, a dwarf planet!" imgSource = {require("../images/pluto.png")} />
+            <FlashCard planetName = "Neptune" imgSource = {require("../images/neptune.jpg")} />
+            <FlashCard planetName = "Venus" imgSource = {require("../images/venus.jpeg")} />
+            <FlashCard planetName = "Uranus" imgSource = {require("../images/uranus.jpg")} />
+          </div>
+          
+          <Footer />
+          
       </div>
       );
 };

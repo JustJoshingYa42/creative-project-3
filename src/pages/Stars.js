@@ -1,11 +1,3 @@
-import HRDiagramImg from './../images/HRDiagram.jpg'
-import stephensonImg from './../images/stephenson.png'
-import neutronStar from './../images/neutron-star-remnants.jpg'
-import whitedwarfImg from './../images/whitedwarf.jpg'
-
-import { Outlet, Link } from "react-router-dom";
-
-
 const Stars = () => {
   return (
   
@@ -24,7 +16,7 @@ const Stars = () => {
                              as surface temperature increases, so too does the brightness of the star, which can then give us a guess as to the distance of the star.
                         </div>
                         <div class="star-section left-border">
-                            <img class = "star-image" src = {HRDiagramImg} alt = "HR Diagram" />
+                            <img class = "star-image" src = {require("../images/HRDiagram.jpg")} alt = "HR Diagram" />
                         </div>                
                     </div>
 
@@ -35,7 +27,7 @@ const Stars = () => {
                     </div>
                     <div class="star-content">
                         <div class="star-section right-border">
-                            <img class = "star-image" src = {stephensonImg}  alt = "RedGiant" />
+                            <img class = "star-image" src = {require("../images/stephenson.png")}  alt = "RedGiant" />
                         </div>       
                         <div class="star-section text">
                             Of the many types of stars, the largest are red supergiants. Here is Stephenson 2-18, the largest known star (by diameter) 
@@ -58,7 +50,7 @@ const Stars = () => {
                              and ejects itself into space, leaving a neutron star. This only takes about 100s. Neutron stars are only held up by the repulsive force between neutrons due to the Pauli Exclusion principle.
                         </div>
                         <div class="star-section left-border">
-                            <img class = "star-image" src = {neutronStar}  alt = "Neutron Star" />
+                            <img class = "star-image" src = {require("../images/neutron-star-remnants.jpg")}  alt = "Neutron Star" />
                         </div>                
                     </div>
 
@@ -70,7 +62,7 @@ const Stars = () => {
                     </div>
                     <div class="star-content">
                         <div class="star-section right-border">
-                            <img class = "star-image" src = {whitedwarfImg} alt = "White Dwarf"/>
+                            <img class = "star-image" src = {require("../images/whitedwarf.jpg")} alt = "White Dwarf"/>
                         </div>
                         <div class="star-section text">
                             Most stars actually dont have violent ends as supernovae. For example, the Sun will become a red giant as it fuses heavier elements (no need to worry, this is in 4 billion years!), and since it is not massive enough, the core won't be able to make iron and 
